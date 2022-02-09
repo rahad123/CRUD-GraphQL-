@@ -1,6 +1,6 @@
 
-import { User } from "./user.js";
-const resolvers = {
+import { User } from "./user.model.js";
+const userResolvers = {
     Query: {
         hello: () => {
             return "hello world";
@@ -49,4 +49,4 @@ const resolvers = {
     // }
 }
 
-export { resolvers };
+export { userResolvers };

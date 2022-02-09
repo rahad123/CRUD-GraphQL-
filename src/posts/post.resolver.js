@@ -1,8 +1,4 @@
-import { Post } from "./post.js";
-import { User } from "../model/user.js";
-import { Category } from "../categoryModel/category.js";
-import { postTypeDefs } from "./typeDef.js";
-
+import { Post } from "./post.model.js";
 const postResolvers = {
     Query: {
         hel: () => {

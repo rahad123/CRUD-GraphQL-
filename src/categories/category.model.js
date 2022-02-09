@@ -1,5 +1,4 @@
-//import {mongoose} from '../config.js';
-import {mongoose} from "../config.js"
+import {mongoose} from ".../config.js"
 
 let categorySchema = new mongoose.Schema ({
     name : {

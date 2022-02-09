@@ -1,13 +1,13 @@
 import pkg from 'lodash';
 const { merge } = pkg;
-import { resolvers } from '../model/resolver.js'
-import { postResolvers } from '../postModel/resolver.js'
-import { categoryResolvers } from '../categoryModel/resolver.js';
+import { userResolvers } from '../src/users/user.resolver.js'
+import { postResolvers } from '../src/posts/post.resolver.js'
+import { categoryResolvers } from '../src/categories/category.resolver.js';
 //import { loginResolvers } from '../authServer/resolver.js'
 import { loginResolvers } from '../authServer/resolver.js';
 
 const resolverMerge = merge([
-    resolvers,
+    userResolvers,
     postResolvers,
     categoryResolvers,
     loginResolvers

@@ -1,5 +1,4 @@
-import { Post } from '../postModel/post.js';
-import { Category } from './category.js'
+import { Category } from './category.model.js'
 
 const categoryResolvers = {
     Query: {
