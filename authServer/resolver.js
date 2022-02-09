@@ -1,5 +1,4 @@
-import { resolvers } from "../model/resolver.js";
-import { User } from "../model/user.js";
+import { User } from "../src/users/user.model.js";
 import bcrypt from "bcrypt";
 import jwt from 'jsonwebtoken';
 import * as dotenv from 'dotenv';

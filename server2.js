@@ -1,13 +1,5 @@
 import {ApolloServer, gql, AuthenticationError } from "apollo-server";
-import express from 'express';
-import * as cookieParser from "cookie-parser";
-import jwt from 'jsonwebtoken';
-import verify from "jsonwebtoken";
-
 import { schema } from './graphQL/schema.js';
-import {graphql, buildSchema, GraphQLSchema, GraphQLObjectType, GraphQLString} from 'graphql';
-import { User } from "./model/user.js";
-//import { createConnection } from "mongoose";
 
     const server = new ApolloServer({
         ...schema,
@@ -21,7 +13,7 @@ import { User } from "./model/user.js";
                     throw new Error("not authenticated");
                 }
             }
-
+ 
             return { token };
         }
 

@@ -1,4 +1,4 @@
-import { mongoose } from "../config.js";
+import { mongoose } from ".../config.js";
 
 const postSchema = new mongoose.Schema({
     title : {

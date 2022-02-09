@@ -1,5 +1,4 @@
-import {ApolloServer, gql} from 'apollo-server';
-import { mongoose} from '../config.js '
+import { mongoose} from '.../config.js'
 
 let userSchema = new mongoose.Schema ({
     username : {
